@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
+label {
+  margin: 10px 0;
+}
+
+.contact-info input,
+textarea,
+select {
+  margin: 10px 0;
+  height: 50px;
+}
+
+
+.main-container {
+  width: 500px;
+  margin: auto;
+}
+
+.main-container > h1 {
+  text-align: center;
+  background-color: darkslategrey;
+  padding: 20px;
+}
+
+.main-container > h2,
+.main-container > p,
+.main-container > h1,
+span {
+  text-align: center;
+}
+
+.main-container > p {
+  width: 90%;
+  margin: auto;
+}
+
+.contact-info input,
+.contact-info select,
+.newsletter textarea {
+  width: 100%;
+}
+
+.contact-info label,
+span {
+  display: block;
+}
+
+.newsletter label {
+  margin-left: 5px;
+}
+
+button {
+  width: 100%;
+  border-radius: 5px;
+  padding: 8px;
+  background-color: darkcyan;
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+}

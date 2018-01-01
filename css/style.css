@@ -113,3 +113,9 @@ button {
 .indent {
   text-indent: 15px;
 }
+
+@media (min-width: 760px) {
+  .main-container {
+    width: 50%;
+  }
+}

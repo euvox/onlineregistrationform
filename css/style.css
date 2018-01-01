@@ -8,43 +8,74 @@ body {
 
 label {
   margin: 10px 0;
+  font-size: 15px;
+}
+
+.contact-info input,
+select {
+  height: 40px;
 }
 
 .contact-info input,
 textarea,
 select {
   margin: 10px 0;
-  height: 50px;
+  background-color: ghostwhite;
 }
 
+.main-header > h1{
+  background-color: darkslategrey;
+  padding: 35px;
+  margin-top: 0;
+  font-size: 23px;
+  color: white;
+}
+
+.main-container > h2,
+.contact-info > h2,
+.newsletter {
+  margin-top: 30px;
+}
 
 .main-container {
-  width: 500px;
-  margin: auto;
+  margin: 0 auto;
+  width: 90%;
 }
 
-.main-container > h1 {
-  text-align: center;
-  background-color: darkslategrey;
-  padding: 20px;
+.main-container h2 {
+  font-size: 21px;
+}
+
+.main-container p {
+  font-size: 15px;
+}
+
+.contact-info > h2 {
+  border-top: 9px double black;
+  padding-top: 30px;
+}
+
+.contact-info input:not([name="user-zipcode"]),
+textarea,
+select {
+  width: 100%;
+}
+
+.contact-info input[name="user-zipcode"] {
+  width: 50%;
 }
 
 .main-container > h2,
 .main-container > p,
 .main-container > h1,
+.main-header > h1,
 span {
   text-align: center;
 }
 
-.main-container > p {
-  width: 90%;
-  margin: auto;
-}
-
-.contact-info input,
-.contact-info select,
-.newsletter textarea {
-  width: 100%;
+input[name="user-zipcode"]  {
+  display: block;
+  width: 100px;
 }
 
 .contact-info label,
@@ -52,16 +83,33 @@ span {
   display: block;
 }
 
+.newsletter {
+  border-top: 3px solid black;
+  padding-top: 5px;
+}
+
 .newsletter label {
   margin-left: 5px;
 }
 
+.choice {
+  margin-bottom: 15px;
+  font
+}
+
 button {
-  width: 100%;
-  border-radius: 5px;
-  padding: 8px;
+  padding: 14px 0;
   background-color: darkcyan;
   color: white;
+  width: 100%;
   font-size: 20px;
   margin: 20px 0;
+}
+
+.b-round {
+  border-radius: 5px;
+}
+
+.indent {
+  text-indent: 15px;
 }

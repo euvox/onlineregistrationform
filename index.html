@@ -8,25 +8,30 @@
     <title>The Code Review</title>
   </head>
   <body>
-    <div class="main-container">
+    <header class="main-header">
       <h1>The Code Review</h1>
-      <h2>Signup for our Newsletter</h2>
-      <p>Get the latest news on how your code is doing right in your inbox</p>
+      <div class="main-container">
+        <h2>Signup for our Newsletter</h2>
+        <p>Get the latest news on how your code is doing right in your inbox</p>
+      </div>
+    </header>
+    <div class="main-container">
       <form class="contact-info" action="index.html" method="post">
         <h2>Contact Information</h2>
         <label for="name">Full Name</label>
-        <input type="text" id="name" name="user-name" value="Required">
+        <input class="b-round indent" type="text" id="name" name="user-name" placeholder="Required" class="user-name" required>
         <label for="email">Email</label>
-        <input type="email" id="email" name="user-email" value="Required">
+        <input class="b-round indent" type="email" id="email" name="user-email" placeholder="Required" required>
         <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="user-phone">
+        <input class="b-round indent" type="tel" id="phone" name="user-phone">
         <label for="address">Street Address</label>
-        <input type="text" id="address" name="user-address">
+        <input class="b-round indent" type="text" id="address" name="user-address">
         <label for="city">City</label>
-        <input type="text" id="city" name="user-city">
-        <label for="state">State</label>
-        <select class="state" name="user-state">
+        <input class="b-round indent" type="text" id="city" name="user-city">
+        <label for="state indent">State</label>
+        <select class="state b-round" name="user-state">
           <optgroup label="State">
+            <option selected disabled>Choose State</option>
             <option value="dubai">Dubai</option>
             <option value="abudhabi">Abu Dhabi</option>
             <option value="sharjah">Sharjah</option>
@@ -37,28 +42,27 @@
           </optgroup>
         </select>
         <label for="zipcode">Zip Code</label>
-        <input type="text" id="zipcode" name="user-zipcode">
+        <input class="b-round indent" type="text" id="zipcode" name="user-zipcode">
       </form>
       <form class="newsletter" action="index.html" method="post">
         <h2>Newsletter</h2>
         <p>Select the newsletters you would like to receive</p>
-        <input type="checkbox" id="html" name="html-news">
-        <label for="html">HTML News</label><br>
-        <input type="checkbox" id="java" name="java-news">
-        <label for="java">Javascript News</label><br>
-        <input type="checkbox" id="css" name="css-news">
-        <label for="html">CSS News</label>
+        <input type="checkbox" id="html" name="html-news" class="choice">
+        <label for="html" class="choice">HTML News</label><br>
+        <input type="checkbox" id="java" name="java-news" class="choice">
+        <label for="java" class="choice">Javascript News</label><br>
+        <input type="checkbox" id="css" name="css-news" class="choice">
+        <label for="css" class="choice">CSS News</label>
         <p>Newsletter format</p>
-        <input type="radio" id="html1" name="format">
-        <label for="html1">HTML</label><br>
-        <input type="radio" id="plain" name="format">
-        <label for="plain">Plain Text</label>
+        <input type="radio" id="html1" name="format" class="choice">
+        <label for="html1" class="choice">HTML</label><br>
+        <input type="radio" id="plain" name="format" class="choice">
+        <label for="plain" class="choice">Plain Text</label>
         <p>Other topics you would like to hear about</p>
-        <textarea name="topics"></textarea>
+        <textarea class="b-round" name="topics" rows="8"></textarea>
       </form>
-      <button type="button" name="signup">Signup</button>
-      <span>Copyright The Code Review</span>
+      <button class="b-round"type="button" name="signup">Signup</button>
+      <span style="font-style: italic">Copyright The Code Review</span>
     </div>
-
   </body>
 </html>

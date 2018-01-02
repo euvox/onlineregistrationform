@@ -23,6 +23,14 @@ select {
   background-color: ghostwhite;
 }
 
+.contact-info input:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0px 0px 5px darkslategrey;
+  background-color: rgba(220, 220, 220, 0.2);
+  transition-duration: .4s;
+}
+
 .main-header > h1{
   background-color: darkslategrey;
   padding: 35px;
@@ -32,9 +40,16 @@ select {
 }
 
 .main-container > h2,
-.contact-info > h2,
-.newsletter {
+.contact-info,
+.newsletter,
+span {
   margin-top: 30px;
+}
+
+.newsletter,
+.contact-info {
+  border-style: none;
+  padding: 0px;
 }
 
 .main-container {
@@ -42,27 +57,38 @@ select {
   width: 90%;
 }
 
-.main-container h2 {
+.main-container h2,
+.contact-info legend,
+.newsletter legend {
   font-size: 21px;
+  font-weight: bold;
+}
+
+.contact-info legend {
+  margin-bottom: 15px;
 }
 
 .main-container p {
   font-size: 15px;
 }
 
-.contact-info > h2 {
+.main-form {
   border-top: 9px double black;
-  padding-top: 30px;
+  margin-top: 40px;
+  background-color: honeydew;
 }
 
-.contact-info input:not([name="user-zipcode"]),
+.contact-info input,
 textarea,
 select {
   width: 100%;
+  resize: none;
+  border-style: none;
+  background-color: gainsboro;
 }
 
 .contact-info input[name="user-zipcode"] {
-  width: 50%;
+  width: 33%;
 }
 
 .main-container > h2,
@@ -83,13 +109,19 @@ span {
   display: block;
 }
 
-.newsletter {
+.newsletter legend {
   border-top: 3px solid black;
-  padding-top: 5px;
+  padding-top: 30px;
+  margin: 10px 0;
+  width: 100%;
 }
 
-.newsletter label {
+.newsletter label:not([class="topic-lbl"]) {
   margin-left: 5px;
+}
+
+.newsletter label[class="topic-lbl"] {
+  display: block;
 }
 
 .choice {
@@ -97,13 +129,13 @@ span {
   font
 }
 
-button {
+.button {
   padding: 14px 0;
   background-color: darkcyan;
   color: white;
   width: 100%;
   font-size: 20px;
-  margin: 20px 0;
+  margin-top: 40px;
 }
 
 .b-round {
@@ -118,6 +150,27 @@ button {
 @media (min-width: 769px) {
   .main-container {
     width: 50%;
-    max-width: 768px;
+    min-width: 768px;
   }
+
+  .contact-info input,
+  .contact-info select,
+  .contact-info label {
+    display: inline-block;
+  }
+
+  .contact-info input,
+  .contact-info select {
+    width: 79.4%;
+  }
+
+  .contact-info input[name="user-zipcode"] {
+    width: 25%;
+  }
+
+  .contact-info label {
+    width: 20%;
+  }
+
+
 }

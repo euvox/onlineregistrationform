@@ -16,52 +16,54 @@
       </div>
     </header>
     <div class="main-container">
-      <form class="contact-info" action="index.html" method="post">
-        <h2>Contact Information</h2>
-        <label for="name">Full Name</label>
-        <input class="b-round indent" type="text" id="name" name="user-name" placeholder="Required" class="user-name" required>
-        <label for="email">Email</label>
-        <input class="b-round indent" type="email" id="email" name="user-email" placeholder="Required" required>
-        <label for="phone">Phone Number</label>
-        <input class="b-round indent" type="tel" id="phone" name="user-phone">
-        <label for="address">Street Address</label>
-        <input class="b-round indent" type="text" id="address" name="user-address">
-        <label for="city">City</label>
-        <input class="b-round indent" type="text" id="city" name="user-city">
-        <label for="state indent">State</label>
-        <select class="state b-round" name="user-state">
-          <optgroup label="State">
-            <option selected disabled>Choose State</option>
-            <option value="dubai">Dubai</option>
-            <option value="abudhabi">Abu Dhabi</option>
-            <option value="sharjah">Sharjah</option>
-            <option value="ajman">Ajman</option>
-            <option value="fujairah">Fujairah</option>
-            <option value="alain">Al Ain</option>
-            <option value="ummalquwain">Umm Al-Quwain</option>
-          </optgroup>
-        </select>
-        <label for="zipcode">Zip Code</label>
-        <input class="b-round indent" type="text" id="zipcode" name="user-zipcode">
+      <form class="main-form" action="index.html" method="post">
+        <fieldset class="contact-info">
+          <legend>Contact Information</legend>
+          <label for="name">Full Name</label>
+          <input class="b-round indent" type="text" id="name" name="user-name" placeholder="Required" class="user-name" required>
+          <label for="email">Email</label>
+          <input class="b-round indent" type="email" id="email" name="user-email" placeholder="Required" required>
+          <label for="phone">Phone Number</label>
+          <input class="b-round indent" type="tel" id="phone" name="user-phone">
+          <label for="address">Street Address</label>
+          <input class="b-round indent" type="text" id="address" name="user-address">
+          <label for="city">City</label>
+          <input class="b-round indent" type="text" id="city" name="user-city">
+          <label for="state indent">State</label>
+          <select class="state b-round" id="state" name="user-state">
+            <optgroup label="State">
+              <option selected disabled>Choose State</option>
+              <option value="dubai">Dubai</option>
+              <option value="abudhabi">Abu Dhabi</option>
+              <option value="sharjah">Sharjah</option>
+              <option value="ajman">Ajman</option>
+              <option value="fujairah">Fujairah</option>
+              <option value="alain">Al Ain</option>
+              <option value="ummalquwain">Umm Al-Quwain</option>
+            </optgroup>
+          </select>
+          <label for="zipcode">Zip Code</label>
+          <input class="b-round indent" type="text" id="zipcode" name="user-zipcode">
+        </fieldset>
+        <fieldset class="newsletter">
+          <legend>Newsletter</legend>
+          <p>Select the newsletters you would like to receive</p>
+          <input type="checkbox" id="html" value="html-news"name="checked-news" class="choice">
+          <label for="html" class="choice">HTML News</label><br>
+          <input type="checkbox" id="java" value="java-news"name="checked-news" class="choice">
+          <label for="java" class="choice">Javascript News</label><br>
+          <input type="checkbox" id="css" value="css-news" name="checked-news" class="choice">
+          <label for="css" class="choice">CSS News</label>
+          <p>Newsletter format</p>
+          <input type="radio" id="html1" value="html-format" name="format" class="choice">
+          <label for="html1" class="choice">HTML</label><br>
+          <input type="radio" id="plain" value="plain-format" name="format" class="choice">
+          <label for="plain" class="choice">Plain Text</label>
+          <label for="topic" class="topic-lbl">Other topics you would like to hear about</label>
+          <textarea class="b-round" id="topic" name="user-topic" rows="8"></textarea>
+          <input class="b-round button"type="submit" id="submit-btn" name="signup" value="Signup">
+        </fieldset>
       </form>
-      <form class="newsletter" action="index.html" method="post">
-        <h2>Newsletter</h2>
-        <p>Select the newsletters you would like to receive</p>
-        <input type="checkbox" id="html" name="html-news" class="choice">
-        <label for="html" class="choice">HTML News</label><br>
-        <input type="checkbox" id="java" name="java-news" class="choice">
-        <label for="java" class="choice">Javascript News</label><br>
-        <input type="checkbox" id="css" name="css-news" class="choice">
-        <label for="css" class="choice">CSS News</label>
-        <p>Newsletter format</p>
-        <input type="radio" id="html1" name="format" class="choice">
-        <label for="html1" class="choice">HTML</label><br>
-        <input type="radio" id="plain" name="format" class="choice">
-        <label for="plain" class="choice">Plain Text</label>
-        <p>Other topics you would like to hear about</p>
-        <textarea class="b-round" name="topics" rows="8"></textarea>
-      </form>
-      <button class="b-round"type="button" name="signup">Signup</button>
       <span style="font-style: italic">Copyright The Code Review</span>
     </div>
   </body>

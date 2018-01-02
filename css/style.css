@@ -1,3 +1,5 @@
+/* Base Styles */
+
 * {
   box-sizing: border-box;
 }
@@ -10,6 +12,62 @@ label {
   margin: 10px 0;
   font-size: 15px;
 }
+
+/* Header Styles */
+
+.main-header > h1{
+  background-color: darkslategrey;
+  padding: 35px;
+  margin-top: 0;
+  font-size: 23px;
+  color: white;
+}
+
+/* Main Content Styles */
+
+.main-container > h2,
+.contact-info,
+.newsletter,,
+span {
+  margin-top: 30px;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.main-container h2,
+.contact-info legend,
+.newsletter legend {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.main-container p {
+  font-size: 15px;
+}
+
+.main-form {
+  border-top: 9px double black;
+  margin-top: 40px;
+  background-color: honeydew;
+}
+
+.main-container > h2,
+.main-container > p,
+.main-container > h1,
+.main-header > h1,
+span {
+  text-align: center;
+}
+
+input[name="user-zipcode"]  {
+  display: block;
+  width: 100px;
+}
+
+/* Contact Information Styles */
 
 .contact-info input,
 select {
@@ -31,51 +89,12 @@ select:focus {
   transition-duration: .4s;
 }
 
-.main-header > h1{
-  background-color: darkslategrey;
-  padding: 35px;
-  margin-top: 0;
-  font-size: 23px;
-  color: white;
-}
-
-.main-container > h2,
-.contact-info,
-.newsletter,
-span {
-  margin-top: 30px;
-}
-
-.newsletter,
-.contact-info {
-  border-style: none;
-  padding: 0px;
-}
-
-.main-container {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.main-container h2,
-.contact-info legend,
-.newsletter legend {
-  font-size: 21px;
-  font-weight: bold;
-}
-
 .contact-info legend {
   margin-bottom: 15px;
 }
 
-.main-container p {
-  font-size: 15px;
-}
-
-.main-form {
-  border-top: 9px double black;
-  margin-top: 40px;
-  background-color: honeydew;
+.contact-info input[name="user-zipcode"] {
+  width: 33%;
 }
 
 .contact-info input,
@@ -87,26 +106,17 @@ select {
   background-color: gainsboro;
 }
 
-.contact-info input[name="user-zipcode"] {
-  width: 33%;
-}
-
-.main-container > h2,
-.main-container > p,
-.main-container > h1,
-.main-header > h1,
-span {
-  text-align: center;
-}
-
-input[name="user-zipcode"]  {
-  display: block;
-  width: 100px;
-}
-
 .contact-info label,
 span {
   display: block;
+}
+
+/* Newsletter Styles */
+
+.newsletter,
+.contact-info {
+  border-style: none;
+  padding: 0px;
 }
 
 .newsletter legend {
@@ -138,6 +148,8 @@ span {
   margin-top: 40px;
 }
 
+/* DRY Classes */
+
 .b-round {
   border-radius: 5px;
 }
@@ -146,6 +158,7 @@ span {
   text-indent: 15px;
 }
 
+/* Media Queries */
 
 @media (min-width: 769px) {
   .main-container {
@@ -171,6 +184,5 @@ span {
   .contact-info label {
     width: 20%;
   }
-
 
 }

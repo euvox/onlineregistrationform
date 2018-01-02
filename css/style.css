@@ -45,6 +45,8 @@ label {
 
 .main-container p {
   font-size: 15px;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .main-form {
